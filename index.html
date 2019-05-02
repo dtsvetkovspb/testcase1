@@ -1,41 +1,59 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Testcase page</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <main>
+    <section class="promo container">
+      <h1>Акции и специальные предложения</h1>
+      <div class="promo-wrapper">
+        <div class="promo__item promo__preorder">
+          <a href="#" class="promo__item--img">
+            <img src="img/promo-img1.png" alt="Кубометрия 3Д" width="195" height="269">
+          </a>
+          <div class="promo__preorder--wrapper">
+            <h3 class="promo__title">Предзаказ тетради &laquo;Кубометрия 3D&raquo;</h3>
+            <p>Акция заканчивается <span class="timer-ending-day">14</span> <span class="timer-ending-month">Мая</span>. Через:</p>
+            <div class="timer-block">
+              <div class="timer-block__hours">
+                <div class="timer-block-value" id="timer-hours">12</div>
+                <p>часов</p>
+              </div>
+              <div class="timer-block__minutes">
+                <div class="timer-block-value" id="timer-minutes">12</div>
+                <p>минут</p>
+              </div>
+              <div class="timer-block__seconds">
+                <div class="timer-block-value" id="timer-seconds">12</div>
+                <p>секунд</p>
+              </div>
+            </div>
+            <div class="promo-footer-wrapper">
+              <div class="promo__price--wrapper">
+                <p class="promo__price">9 999 &#8381;</p>
+                <p class="promo__discount">9 999 &#8381;</p>
+              </div>
+              <a href="#" class="promo__link">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="promo__item promo__competition">
+          <a href="#" class="promo__competition--overlay" aria-label="Подробнее про конкурс"></a>
+          <div class="promo__competition--inner">
+            <a href="#" class="promo__link">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
